@@ -2,10 +2,10 @@ name: Tests
 
 on:
   push:
-    branches: [main, dev]
+    branches: [dev]
   pull_request:
     types: [opened, synchronize]
-    branches: [main, dev]
+    branches: [dev]
 
 jobs:
   test:
