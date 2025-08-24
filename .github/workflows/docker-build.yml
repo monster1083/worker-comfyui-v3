@@ -1,19 +1,13 @@
-name: Release
+name: build_and_push
 
 on:
-  workflow_dispatch:
   push:
     branches:
-      - "main"
+      - main
 
 jobs:
-  release:
+  build_and_push:
     runs-on: ubuntu-latest-m
-    if: ${{ !contains(github.event.head_commit.message, 'chore(release)') }}
-    permissions:
-      contents: write # to be able to publish a GitHub release
-      issues: write # to be able to comment on released issues
-      pull-requests: write # to be able to comment on released pull requests
 
     steps:
       - name: Checkout
