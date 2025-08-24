@@ -25,5 +25,22 @@ pip install rembg[gpu]
 git clone https://github.com/Fannovel16/comfyui_controlnet_aux/
 pip install -r comfyui_controlnet_aux/requirements.txt
 
-git clone https://github.com/WASasquatch/was-node-suite-comfyui/
-pip install -r was-node-suite-comfyui/requirements.txt
+git clone https://github.com/chflame163/ComfyUI_LayerStyle.git
+pip install -r ComfyUI_LayerStyle/requirements.txt
+
+git clone https://github.com/comfyorg/comfyui-essentials.git
+pip install -r comfyui-essentials/requirements.txt
+
+git clone https://github.com/jags111/efficiency-nodes-comfyui.git
+pip install -r efficiency-nodes-comfyui/requirements.txt
+
+git clone https://github.com/TemryL/ComfyS3.git
+pip install -r ComfyS3/requirements.txt
+
+git clone https://github.com/city96/ComfyUI-GGUF.git
+pip install -r ComfyUI-GGUF/requirements.txt
+
+git clone https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch.git
+
+git clone https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced.git
+pip install -r ComfyUI-PuLID-Flux-Enhanced/requirements.txt

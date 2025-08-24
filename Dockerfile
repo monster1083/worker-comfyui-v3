@@ -49,10 +49,5 @@ RUN /update.sh
 ADD src/start.sh src/restore_snapshot.sh src/rp_handler.py test_input.json ./
 RUN chmod +x /start.sh /restore_snapshot.sh
 
-# Optionally copy snapshot file
-ADD snapshot.jso[n] /
-
-RUN /restore_snapshot.sh
-
 # Start the container
 CMD /start.sh
