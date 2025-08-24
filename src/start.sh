@@ -4,6 +4,21 @@
 TCMALLOC="$(ldconfig -p | grep -Po "libtcmalloc.so.\d" | head -n 1)"
 export LD_PRELOAD="${TCMALLOC}"
 
+
+
+echo "----------------------ls /runpod-volume/ComfyUI/models----------------------------"
+echo "ls -la /runpod-volume/ComfyUI/models"
+ls -la /runpod-volume/ComfyUI/models/
+echo "ls -la /runpod-volume/ComfyUI/models/insightface"
+ls -la /runpod-volume/ComfyUI/models/insightface/
+echo "----------------------ls /runpod-volume/comfyui/models----------------------------"
+echo "ls -la /runpod-volume/comfyui/models/"
+ls -la /runpod-volume/comfyui/models/
+echo "ls -la /runpod-volume/comfyui/models/insightface"
+ls -la /runpod-volume/comfyui/models/insightface/
+
+
+
 # Check if /runpod-volume/ComfyUI/models/insightface is mounted
 if [ -d "/runpod-volume/ComfyUI/models/insightface" ]; then
     echo "/runpod-volume/ComfyUI/models/insightface directory exists."
